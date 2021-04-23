@@ -1,0 +1,1800 @@
+install.packages("cairo")
+2
+install.packages("Cairo")
+library("Cairo")
+cairo_pdf
+cairo_pdf("ff.pdf", width=10, height=10)
+library('corrplot')#
+library("Cairo")#
+cairo_pdf("cor_matrix.pdf", width=10, height=10)#
+rData <- read.csv("data.csv")#
+rData <- na.omit(rData)#
+#
+corrplot(cor(rData[4:dim(rData)[2]]), method="ellipse", type="upper", tl.cex=.7, tl.col="black", tl.srt=45)
+?lm
+?sample
+sample(1:400,400)
+sample(1:400,400) * .33
+f<-sample(1:400,400)
+f[1:floor(length(f)*.33)]
+f[floor(length(f)*.33):floor(length(f)*.66)]
+f[floor(length(f)*.33)+1:floor(length(f)*.66)]
+sample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(localSample[1:floor(length(localSample)*.333)], localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)], localSample[floor(length(localSample)*.666):length(localSample)])#
+}
+sample
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(localSample[1:floor(length(localSample)*.333)], localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)], localSample[floor(length(localSample)*.666):length(localSample)])#
+}
+sample
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(localSample[1:floor(length(localSample)*.333)], localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)], localSample[floor(length(localSample)*.666):length(localSample)])#
+}
+customSample(400)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(1,2,3)#
+}
+customSample(400)
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(data.frame(train=localSample[1:floor(length(localSample)*.333)], validate=localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)],test=localSample[floor(length(localSample)*.666):length(localSample)]))#
+}
+customSample(400)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(data.frame(train=localSample[1:ceiling(length(localSample)*.333)],#
+		   validate=localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)],#
+		   test=localSample[floor(length(localSample)*.666):length(localSample)]))#
+}
+customSample(400)
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(data.frame(train=localSample[1:floor(length(localSample)*.333)],#
+		   validate=localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)],#
+		   test=localSample[floor(length(localSample)*.666):length(localSample)]))#
+}
+customSample(400)
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- sample(1:len, len)#
+	return(data.frame(train=localSample[1:floor(length(localSample)*.333)+1],#
+		   validate=localSample[floor(length(localSample)*.333):floor(length(localSample)*.666)],#
+		   test=localSample[floor(length(localSample)*.666):length(localSample)-1]))#
+}
+customSample(400)
+customSample(401)
+customSample(405)
+134+136
+134+136+137
+split(sample(400), 1:3)
+split(sample(400), 1:3)$2
+split(sample(400), 1:3)['2']
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len))#
+	return(localSample)#
+}
+customSample(400)
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}
+customSample(400)
+f<-customSample(400)
+length(f['1'])
+f
+f['1']
+length(f['1'])
+f
+seq(1:400)[f["1"]]
+class(f)
+class(f["1"])
+unlist(class(f["1"]))
+class(unlist(f["1"]))
+seq(1:400)[f["1"]]
+seq(1:400)[unlist(f["1"])]
+?predict
+names(data)
+?predict
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(data)#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(data)#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+data
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(data)#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+randomSample["1"][2]
+randomSample
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(length(data)#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+randomSample
+customSample
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(length(data))#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+names(data)
+randomSample <- customSample(length(data))#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"])])#
+pred <- predict(model1, data[unlist(randomSample["2"])], type="response")
+?lm
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(length(data))#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+pred
+lm
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(length(data))#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+model1
+pred
+class(pred)
+length(pred)
+data[unlist(randomSample["2"]),]
+dim(data[unlist(randomSample["2"]),])
+dim(data)
+length(data)
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+dim(randomSample)
+dim(data)
+customSample(400)
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+randomSample
+pred
+dim(pred)
+pred
+length(pred)
+550*3
+dim(data)
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+pred[1]
+pred[5]
+pred[500]
+pred[501]
+plot(pred)
+class(pred)
+class(data.frame())
+class(matrix)
+class(matrix())
+pred[1]
+pred[1][1]
+pred[1][1][1]
+unlist(pred[1])
+pred
+plot(x=pred, y=model1)
+length(pred)
+length(1)
+length(model1)
+model1
+pred[1]
+plot(67)
+plot(pred[1])
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")
+plot(x=pred, y=data[unlist(customSample["2"])])
+plot(x=pred, y=data[unlist(randomSample["2"])])
+plot(x=pred, y=data[unlist(randomSample["2"])]$Life.expectancy)
+plot(x=pred, y=data[unlist(randomSample["2"])]$Life.expectancy)
+data$Life.expectancy[1]
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy)
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ann=FALSE, axes=FALSE)
+?ablines
+?abline
+model1
+model1$Intercept
+names(model1)
+model1$model
+names(model1)
+model1$coefficients
+names(model1$coefficients)
+model1$coefficients$Intercept
+model1$coefficients$(Intercept)
+names(model1$coefficients)
+names(model1)
+model1$terms
+model1$terms[1]
+model1
+model1[1]
+model1[1][1]
+model1$BMI
+model1
+names(model1)
+model1$model
+names(model1)
+model1$residuals
+names(model1)
+model1$rank
+names(model1)
+model1$qr
+names(model1)
+model1$xlevels
+model1$coefficients
+model1$coefficients[1]
+model1$coefficients[1,1]
+model1$coefficients[1][1]
+model1$estimate
+model1$estimates
+cor
+cor(model1[unlist(randomSample["2"])] ~ pred)
+cor(model1[unlist(randomSample["2"])], pred)
+cor(model1[unlist(randomSample["2"])], pred)
+model1[1,]
+model1[1]
+cor(cbind(model1[unlist(randomSample["2"])],pred))
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#
+p <- pretty(data[unlist(randomSample["2"])])#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(p[1], p[length(p)]), ann=FALSE, axes=FALSE)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#
+p <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(p[1], p[length(p)]), ann=FALSE, axes=FALSE)
+cor(model1[unlist(randomSample["2"])]$Life.expextancy, pred)
+model1[unlist(randomSample["2"])]$Life.expextancy
+model1[unlist(randomSample["2"]),]$Life.expextancy
+data[unlist(randomSample["2"]),]$Life.expextancy
+data[unlist(randomSample["2"])]$Life.expextancy
+data[unlist(randomSample["2"]), "Life.expextancy"]
+data[1,]
+data[unlist(randomSample["2"]), "Life.expextancy"]
+randomSample["2"][1]
+unlist(randomSample["2"])[1]
+data[unlist(randomSample["2"]), "Life.expextancy"]
+data[unlist(randomSample["2"]), 1]
+data[unlist(randomSample["2"]), 2]
+data[unlist(randomSample["2"]),]$Life.expectancy
+cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(px)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=p[length(p)], v=pX[length(pX)])
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)])
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)])
+pY
+pX
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)
+pY
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)
+data[unlist(randomSample['2']),]
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expextancy)
+pY
+names(data)
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)
+pY
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)])
+pY
+pX
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)])
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)])
+?abline
+?ablines
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE)
+abline(model1)
+brewer.pal
+library("RColorBrewer")
+brewer.pal
+add.alpha
+library("GISTools")
+add.alpha
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(a=model1$coefficients[1], b=corNum, h=pY[length(pY)], v=pX[length(pX)], col=colorsT[1])
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+#par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])
+extractAIC
+extractAIC(model1)
+?extractAIC
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+?extractAic
+?extractAIC
+extractAIC(model1)
+?text
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(pX[0], pY[0], labels=extractAIC(model1))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(pX[0]+10, pY[0]+10, labels=extractAIC(model1))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(70,70, labels=extractAIC(model1))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(30,30, labels=extractAIC(model1)[2])#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=extractAIC(model1)[2])#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2]))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[3])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[3])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2), mai=c(1,1,1,1))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)
+dev.off()
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1)#
+mtext("Real Life Expectancy", side=2)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01, cex.axis=.7)#
+axis(2, at=pY, labels=pY, tck=.01, las=2, cex.axis=.7)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)
+# model 1 - BMI Alcohol#
+# model 2 - GDP Population#
+# model 3 - Income Schooling #
+# model 4 - Schooling Alcohol#
+#
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:3)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01, cex.axis=.7)#
+axis(2, at=pY, labels=pY, tck=.01, las=2, cex.axis=.7)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)
+library("RColorBrewer")#
+library("GISTools")#
+#
+colors <- brewer.pal(4, "Set1")#
+colorsT <- add.alpha(colors, .4)#
+#
+data <- read.csv("data.csv")#
+data <- na.omit(data)#
+data$GDP <- log10(data$GDP)#
+#ProletarianBoi96( or ProletarianBoi96) or something...#
+#
+par(mfcol=c(2,2))#
+#
+# values can be grabbed with ["1"]/["2]/["3]...must unlist to subscript a vector#
+customSample <- function(len) {#
+	#returns three vectors: one vector is for training, the other for validation, and the next for testing#
+	localSample <- split(sample(1:len, len), 1:2)#
+	return(localSample)#
+}#
+randomSample <- customSample(dim(data)[1])#
+model1 <- lm(Life.expectancy ~ BMI + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model1, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[1])#
+abline(model1, col=colorsT[1])#
+text(75,45, labels=paste("AIC=",floor(extractAIC(model1)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+#second model#
+randomSample <- customSample(dim(data)[1])#
+model2 <- lm(Life.expectancy ~ GDP + Population, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#corNum <- cor(pred,data[unlist(randomSample["2"]),]$Life.expectancy)#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[2])#
+abline(model1, col=colorsT[2])#
+text(80,45, labels=paste("AIC=",floor(extractAIC(model2)[2])))#
+axis(1, at=pX, labels=pX, tck=.01, cex.axis=.7)#
+axis(2, at=pY, labels=pY, tck=.01, las=2, cex.axis=.7)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+randomSample <- customSample(dim(data)[1])#
+model3 <- lm(Life.expectancy ~ Income.composition.of.resources + Schooling, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[3])#
+abline(model1, col=colorsT[3])#
+text(70,45, labels=paste("AIC=",floor(extractAIC(model3)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)#
+randomSample <- customSample(dim(data)[1])#
+model4 <- lm(Life#
+.expectancy ~ Schooling + Alcohol, data[unlist(randomSample["1"]),])#
+pred <- predict(model2, data[unlist(randomSample["2"]),], type="response")#
+#
+pY <- pretty(data[unlist(randomSample["2"]),]$Life.expectancy)#
+pX <- pretty(pred)#
+plot(x=pred, y=data[unlist(randomSample["2"]),]$Life.expectancy, ylim=c(pY[1], pY[length(pY)]), xlim=c(pX[1], pX[length(pX)]), ann=FALSE, axes=FALSE, pch=16, col=colorsT[4])#
+abline(model1, col=colorsT[4])#
+text(72,45, labels=paste("AIC=",floor(extractAIC(model4)[2])))#
+axis(1, at=pX, labels=pX, tck=.01)#
+axis(2, at=pY, labels=pY, tck=.01, las=2)#
+mtext("Predicted Life Expextancy", side=1, line=2, cex=.8)#
+mtext("Real Life Expectancy", side=2, line=2, cex=.8)
+dev.off()
